@@ -1,3 +1,28 @@
+ssb_negro_system_initializer = {
+	name = "Negro"
+	class = "sc_black_hole"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Negro"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+
+}
 ssb_cohatera_system_initializer = {
 	name = "Cohatera"
 	class = "sc_trinary_4"
